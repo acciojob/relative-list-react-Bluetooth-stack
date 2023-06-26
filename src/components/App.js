@@ -6,10 +6,10 @@ const App = () => {
   return (
     <div id="main">
                {/* Do not remove the main div */}
-               <ol key='relativeList'>
+               <ol id='relativeList'>
                 {
                   list.map((name, indx)=>(
-                    <li key={`relativeListItem${indx+1}`}>{name}</li>
+                    <li id={`relativeListItem${indx+1}`}>{name}</li>
                   ))
                 }
                </ol>
